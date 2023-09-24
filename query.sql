@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `baiviet` (
   PRIMARY KEY (`ma_bviet`),
   KEY `ma_tloai` (`ma_tloai`),
   KEY `ma_tgia` (`ma_tgia`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=UTF8MB4_GENERAL_CI;
 
 -- Dumping data for table btth01_cse485_ex02.baiviet: ~0 rows (approximately)
 INSERT INTO `baiviet` (`ma_bviet`, `tieude`, `ten_bhat`, `ma_tloai`, `tomtat`, `noidung`, `ma_tgia`, `ngayviet`, `hinhanh`) VALUES
@@ -42,7 +42,8 @@ INSERT INTO `baiviet` (`ma_bviet`, `tieude`, `ten_bhat`, `ma_tloai`, `tomtat`, `
 	(3, 'Cảm nhận bài hát Yêu một người có lẽ', 'Yêu một người có lẽ', 2, 'Tóm tắt Yêu một người có lẽ', 'Nội dung yêu một người có lẽ', 2, '2016-10-19 00:00:00', 'https://i.scdn.co/image/ab67616d0000b273d28b4546b16fc8e0000f277e'),
 	(4, 'Cảm nhận bài hát Đáy biển', 'Đáy biển', 4, 'Tóm tắt Đáy biển', 'Nội dung Đáy biển', 2, '2017-02-24 00:00:00', 'https://i.ytimg.com/vi/SWecf5gAEVk/maxresdefault.jpg'),
 	(5, 'Cảm nhận bài hát Về Đâu Mái Tóc Người Thương', 'Về Đâu Mái Tóc Người Thương', 2, 'Tóm tắt bài Về Đâu Mái Tóc Người Thương', 'Nội dung bài hát Về Đâu Mái Tóc Người Thương', 1, '2012-10-10 00:00:00', 'https://i.ytimg.com/vi/_pf6VHv9sDA/maxresdefault.jpg');
-
+DELETE FROM baiviet
+WHERE ma_bviet = 5
 -- Dumping structure for table btth01_cse485_ex02.tacgia
 CREATE TABLE IF NOT EXISTS `tacgia` (
   `ma_tgia` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -53,10 +54,11 @@ CREATE TABLE IF NOT EXISTS `tacgia` (
 
 -- Dumping data for table btth01_cse485_ex02.tacgia: ~4 rows (approximately)
 INSERT INTO `tacgia` (`ma_tgia`, `ten_tgia`, `hinh_tgia`) VALUES
-	(1, 'Bùi Anh Tuấn', 'https://www.pinterest.com/pin/833799318533250710/'),
+	(1, 'Châu Kiệt Luân', ''),
 	(2, 'Nhacvietplus', 'https://i.rada.vn/Data/image/2012/Thang11/20/Nhacvietplus-2.jpg'),
 	(3, 'Phi Nhung', 'https://picsum.photos/seed/picsum/200/300'),
 	(4, 'Trần Lập Nông', 'https://i.pinimg.com/736x/30/03/43/300343a6735c7b5c3137a866b08aa7c9.jpg');
+	-- Delete
 
 -- Dumping structure for table btth01_cse485_ex02.theloai
 CREATE TABLE IF NOT EXISTS `theloai` (
