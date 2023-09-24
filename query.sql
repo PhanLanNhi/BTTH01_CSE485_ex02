@@ -41,9 +41,13 @@ INSERT INTO `baiviet` (`ma_bviet`, `tieude`, `ten_bhat`, `ma_tloai`, `tomtat`, `
 	(2, 'Cảm nhận bài hát Tâm lặng như nước', 'Tâm lặng như nước', 4, 'Tóm tắt Tâm lặng như nước', 'Nội dung bài hát Tâm lặng như nước', 3, '2019-08-09 00:00:00', 'https://i.ytimg.com/vi/UVR8Pd1t9f0/maxresdefault.jpg'),
 	(3, 'Cảm nhận bài hát Yêu một người có lẽ', 'Yêu một người có lẽ', 2, 'Tóm tắt Yêu một người có lẽ', 'Nội dung yêu một người có lẽ', 2, '2016-10-19 00:00:00', 'https://i.scdn.co/image/ab67616d0000b273d28b4546b16fc8e0000f277e'),
 	(4, 'Cảm nhận bài hát Đáy biển', 'Đáy biển', 4, 'Tóm tắt Đáy biển', 'Nội dung Đáy biển', 2, '2017-02-24 00:00:00', 'https://i.ytimg.com/vi/SWecf5gAEVk/maxresdefault.jpg'),
-	(5, 'Cảm nhận bài hát Về Đâu Mái Tóc Người Thương', 'Về Đâu Mái Tóc Người Thương', 2, 'Tóm tắt bài Về Đâu Mái Tóc Người Thương', 'Nội dung bài hát Về Đâu Mái Tóc Người Thương', 1, '2012-10-10 00:00:00', 'https://i.ytimg.com/vi/_pf6VHv9sDA/maxresdefault.jpg');
-DELETE FROM baiviet
-WHERE ma_bviet = 5
+	(5, 'Cảm nhận bài hát Tuổi trẻ', 'Tuổi trẻ', 2, 'Tóm tắt bài Tuổi trẻ', 'Nội dung bài hát Tuổi trẻ', 1, '2012-01-10 08:40:00', 'https://evan.com.vn/wp-content/uploads/2022/04/tuoi-tre-nhu-mot-con-mua-rao.jpg'),
+	(6, '', 'Lỡ duyên', 1, 'Tóm tắt bài', 'Nội dung bài Lỡ duyên', 4, '2020-12-10 04:00:00', 'https://i.ytimg.com/vi/fq_H4A3HgD4/maxresdefault.jpg')
+INSERT INTO `baiviet` (`ma_bviet`, `tieude`, `ten_bhat`, `ma_tloai`, `tomtat`, `noidung`, `ma_tgia`, `ngayviet`, `hinhanh`) VALUES
+	(7, 'Cây và gió', 'Cây và gió', 1, 'Em và anh, hai đứa quen nhau thật tình cờ', 'Em thương anh', 4, '2005-02-07 07:07:00', 'https://media.blogradio.vn/Upload/CMS/Nam_2011/Thang_9/Ngay_8/Images/Avatar/images592143_Gio_1.jpg');
+INSERT INTO `baiviet` (`ma_bviet`, `tieude`, `ten_bhat`, `ma_tloai`, `tomtat`, `noidung`, `ma_tgia`, `ngayviet`, `hinhanh`) VALUES
+	(8, '', 'Xứ thanh hoa', 4, 'Tóm tắt bài Xú thanh hoa', 'Nội dung bài yêu thương nàng', 1, '2000-02-11 05:00:00', 'https://i.ytimg.com/vi/fq_H4A3HgD4/maxresdefault.jpg')
+	
 -- Dumping structure for table btth01_cse485_ex02.tacgia
 CREATE TABLE IF NOT EXISTS `tacgia` (
   `ma_tgia` int(10) unsigned NOT NULL AUTO_INCREMENT,
