@@ -12,10 +12,6 @@ html {
     box-shadow: 0 4px 8px 0 rgba(102, 101, 101, 0.2), 0 6px 20px 0 rgba(133, 132, 132, 0.19);;
 }
 
-.navbar-nav li:last-child a{
-    color: #000;
-}
-
 .body__main {
     position: relative;
 }
@@ -27,4 +23,12 @@ html {
 
 .body__header-wrapp a {
     padding: 4px;
+}
+
+.navbar-nav li:hover a:first-child {
+    color: #000;
+}
+
+.navbar-nav li:hover a:last-child {
+    color: #000;
 }
