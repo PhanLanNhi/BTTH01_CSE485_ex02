@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../bootstrap.min.css">
+    <style>
+        .navbar {
+            box-shadow: 0 4px 8px 0 rgba(102, 101, 101, 0.2), 0 6px 20px 0 rgba(133, 132, 132, 0.19);;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Adminstration</a>
     <div class="collapse navbar-collapse" id="navbarScroll">
